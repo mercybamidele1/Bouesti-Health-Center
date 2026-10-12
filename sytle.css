@@ -822,6 +822,7 @@ li{
     color:rgb(14,115,96) ;
     border-radius: 10px;
     justify-self: center;
+    width:100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
     
@@ -829,7 +830,7 @@ li{
 
 
 h1{
-    width: 80%;
+    width: 100%;
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 0.8rem;
