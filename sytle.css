@@ -729,20 +729,20 @@ html {
   display: none;
 }
 
-/* Make the SVG icon clickable */
+
 .menu-btn {
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  gap: 370px;
-  align-items: center;
-  padding: 1rem;
+cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;                    
+    align-items: center;
+    padding: 1rem;
    
 }
 
-/* Hidden Mobile Menu Drawer */
+
 .mobile-menu {
-  display: none; /* Hidden by default */
+  display: none; 
   position: absolute;
   top: 100%;
   right: 0;
