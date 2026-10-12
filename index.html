@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Portal</title>
+    <link rel="stylesheet" href="sytle.css">
+</head>
+<body>
+
+    <!--navigation-->
+    <header>
+        
+           <nav class="nav-links">
+                <div class="logo">
+                    <h3>BOUESTI</h3>
+                    <h5>HEALTH CENTER</h5>
+                 </div>
+                
+                    <a href="#hero">Home</a>
+                    <a href="#specialist">Specialists</a>
+                    <a href="#medical-department">Departments</a>
+                    <a href="#appointment">Appointments</a>
+                    <a href="#footer">Contact</a>
+                
+
+                </nav>
+        
+    </header>
+
+
+    <!--for mobile-->
+      <nav class="mobilenav">
+  <!-- Hidden checkbox controller -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+  <!-- Label attached to checkbox, wrapping your breadcrumb/hamburger SVG -->
+  <label for="menu-toggle" class="menu-btn">
+    <div class="logo">
+                    <h3>BOUESTI</h3>
+                    <h5>HEALTH CENTER</h5>
+                 </div>
+   
+    <img class="class" src="assets/Container.svg" alt="">
+  </label>
+
+  
+
+  <!-- Mobile Dropdown Drawer -->
+
+   
+  <div class="mobile-menu">
+     
+      
+
+      <!-- Regular Links -->
+      <a href="#hero">Home</a>
+      <a href="#specialist">Specialists</a>
+      <a href="#medical-department">Departments</a>
+      <a href="#appointment">Appointments</a>
+      <a href="#footer">Contact</a>
+
+  </div>
+</nav>
+
+    </header>
+
+
+
+
+
+    <!--hero-section-->
+
+    <section id="hero">
+        <h5>Top Healthcare Specialist Network</h5>
+        <h1>Your Health is Our<b style="color:rgb(14,115,96)">
+             Top Priority</b></h1>
+
+             <p>Access world-class specialist doctors, view instant real-time availability,
+                 and schedule your appointment seamlessly within minutes.</p>
+
+                 <div class="hero-btn">
+                    <a id="appoint" href="#appointment">Schedule Appointment</a>
+                    <a id="browse" href="#specialist">Browse Specialist</a>
+
+                 </div>
+
+    </section>
+
+
+    <section id="rating">
+
+        <div class="numbers">
+            <h2>12+</h2>
+            <p>Departments</p>
+
+
+        </div>
+
+        <div class="numbers">
+            <h2>50+</h2>
+            <p>Specialist Doctors</p>
+        </div>
+
+        <div class="numbers">
+            <h2>99.2%</h2>
+            <p>Satisfaction Rate</p>
+        </div>
+
+       
+
+    </section>
+
+
+
+    <section id="specialist">
+        <h2>Meet Our Specialist Doctors</h2>
+            <p>Search or filter doctors by department and view availability.</p>
+            <div class="search-bar">
+                <div class="search">
+                <input type="text" placeholder="Search by name or department">
+                <button class="search-bar-btn">Search</button>
+                </div>
+     
+                <select>
+                    <option value="">Filter by Department</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="dermatology">Dermatology</option>
+                    <option value="neurology">Neurology</option>
+                    option value="orthopedics">Orthopedics</option>
+                </select>
+
+            </div>
+
+
+        <div class="specialist-cards">
+            <div id="card1">
+                <img src="assets/images (1).jpg" alt="Doctor 1"width="150" height="450">
+                <h3>Dr. John Smith</h3>
+                <h4>Cardiologist</h4>
+                <p>10 years of experience</p>
+                <button>Book Appointment</button>
+            </div>
+            <div id="card2">
+                <img src="assets/images.jpg" alt="Doctor 2" width="150" height="450">
+                <h3>Dr. Emily Johnson</h3>
+                <h4>Dermatologist</h4>
+                <p>8 years of experience</p>
+                <button>Book Appointment</button>
+            </div>
+            <div id="card3">
+                <img src="assets/images (2).jpg" alt="Doctor 3" width="150" height="450">
+                <h3>Dr. Michael Brown</h3>
+                <h4>Neurologist</h4>
+                <p>12 years of experience</p>
+                <button>Book Appointment</button>
+            </div>
+
+            <div id="card4">
+                <img src="assets/images (3).jpg" alt="Doctor 4" width="150" height="450">
+                <h3>Dr. Sarah Lee</h3>
+                <h4>Orthopedic Surgeon</h4>
+                <p>5 years of experience</p>
+                <button>Book Appointment</button>
+        </div>
+
+    </section>
+
+
+   
+   </section>
+    <section id="medical-department">
+        <h2>Our Medical Departments</h2>
+        <div class="department-cards">
+            <div class="cardbox">
+                <h3>Cardiology</h3>
+                <p>Heart and vascular care.</p>
+                <a href="#card1">view Doctors</a>
+            </div>
+            <div class="cardbox">
+                <h3>Dermatology</h3>
+                <p>Skin health and treatments.</p>
+                <a href="#card2">view Doctors</a>
+            </div>
+            <div class="cardbox">
+                <h3>Neurology</h3>
+                <p>Brain and nervous system care.</p>
+                <a href="#card3">view Doctors</a>
+            </div>
+
+            <div class="cardbox">
+                <h3>Orthopedics</h3>
+                <p>Bone and joint care.</p>
+                <a href="#card4">view Doctors</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="appointment">
+        <h2>Schedule Your Appointment</h2>
+        <p>Book your appointment with our specialist doctors easily.</p>
+        
+        <form action="">
+            <label for="name">Full Name <i>*</i></label>
+            <input type="text" id="name" placeholder="Enter your full name" required autocomplete="name">
+            <label for="email">Email <i>*</i></label>
+            <input type="email" id="email" placeholder="Enter your email" required autocomplete="email">
+            <label for="phone">Phone Number <i>*</i></label>
+            <input type="number" id="phone" placeholder="Enter your phone number" required>
+
+            <div class="male">
+            <label for="Gender">Gender <i>*</i></label>
+            <select id="gender">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label  for="age">Age <i>*</i></label>
+            <input class="age" type="number" id="age" placeholder="Enter your age" required>
+            </div>
+
+            <label for="department">Select Department <i>*</i></label>
+            <select id="department" required>
+                <option value="">Choose a department</option>
+                <option value="cardiology">Cardiology</option>
+                <option value="dermatology">Dermatology</option>
+                <option value="neurology">Neurology</option>
+                <option value="orthopedics">Orthopedics</option>
+            </select>
+
+            
+
+            <label for="Reason">Reason for Appointment <i>*</i></label>
+            <textarea id="Reason" placeholder="Additional Note"></textarea>
+            <button type="submit">Book Appointment</button>
+        </form>
+
+    </section>
+
+
+    <footer id="footer">
+        <h2>Contact Us</h2>
+        <p>Have questions or need assistance? Reach out to us.</p>
+
+        <div class="footer-links">
+         <div class="social-media">
+            <h3>Contact Support</h3>
+
+                 <p>Email: info@hospital.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+
+
+        
+            <div class="quick-links">
+            <h3>Quick Links</h3>
+            <a href="#hero">Home</a>
+            <a href="#specialist">Specialists</a>
+            <a href="#medical-department">Departments</a>
+            <a href="#appointment">Appointments</a>
+
+            </div>
+
+
+
+            <div class="departments">
+          <h3>Departments</h3>
+            <a href="#card1">Cardiology</a>
+            <a href="#card2">Dermatology</a>
+            <a href="#card3">Neurology</a>
+            <a href="#card4">Orthopedics</a>
+            
+            </div>
+               
+
+
+            </div>
+
+            
+
+        </div>
+        
+    
+    </footer>
+    
+</body>
+</html>
