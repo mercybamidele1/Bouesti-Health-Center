@@ -134,7 +134,7 @@ h1{
     border: 2px solid rgb(14,115,96);
     text-decoration: none;
     text-align: center;
-    align-items:center;
+    
 }
 
 
@@ -827,7 +827,7 @@ li{
     width:100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
-    
+    text-align:center;
 }
 
 
