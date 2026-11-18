@@ -9,8 +9,6 @@
 body{
     background-color: #F8FAFC;
     font-family: "poppins",sans-serif;
-    overflow-x: hidden;
-    width: 100%;
     
     
 }
@@ -80,7 +78,7 @@ html {
     justify-self: center;
     padding: 0.5rem;
     margin-bottom: 1rem;
-    text-align:center;
+    text-align: center;
     
 }
 
@@ -134,7 +132,6 @@ h1{
     border: 2px solid rgb(14,115,96);
     text-decoration: none;
     text-align: center;
-    
 }
 
 
@@ -221,7 +218,7 @@ h1{
      border: 2px solid rgb(14,115,96);
 }
 
-.search-bar-btn{
+#search-bar-btn{
     border-radius: 10px;
     padding: 0.5rem;
     background-color: rgb(14,115,96);
@@ -512,7 +509,8 @@ h1{
 }
 
 .cardbox a{
-    color:rgb(14,115,96);;
+    color:rgb(14,115,96);
+    
     
 }
 
@@ -579,26 +577,26 @@ textarea{
     width: 100%;
 }
 
-#gender{
-    display: flex;
-    gap: 20px;
+.male {
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr;  
+    gap: 15px;
+    align-items: center;
     margin-bottom: 1rem;
 }
 
-.male{
-   display: flex;
-   gap: 12px;
-}
-
-.male select{
+#gender {
     width: 100%;
     padding: 0.6rem;
     border: 1px solid #151515;
-    align-items: center;
+    border-radius: 4px;
 }
 
-.age{
-    width: 10%;
+.age {
+    width: 100% ;
+    padding: 0.6rem;
+    border: 1px solid #151515;
+    border-radius: 4px;
 }
 
 i{
@@ -726,25 +724,25 @@ html {
 .nav-links{
     display: none;
 }
-/* Hide the actual checkbox element */
+
 .menu-toggle {
   display: none;
 }
 
 
 .menu-btn {
-cursor: pointer;
+ cursor: pointer;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     width: 100%;                    
     align-items: center;
     padding: 1rem;
    
 }
 
-
+/* Hidden Mobile Menu Drawer */
 .mobile-menu {
-  display: none; 
+  display: none; /* Hidden by default */
   position: absolute;
   top: 100%;
   right: 0;
@@ -823,16 +821,13 @@ li{
     background-color:rgb(163, 239, 225) ;
     color:rgb(14,115,96) ;
     border-radius: 10px;
-    justify-self: center;
-    width:100%;
+    
     padding: 0.5rem;
     margin-bottom: 1rem;
-    text-align:center;
+    
 }
-
-
 h1{
-    width: 100%;
+    width: 80%;
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 0.8rem;
@@ -1254,7 +1249,7 @@ h1{
 }
 
 .cardbox a{
-    color:rgb(14,115,96);
+    color:#151515;
     
 }
 
@@ -1263,81 +1258,106 @@ h1{
 
 /*Appointment*/
 
-#appointment{
-    padding: 1rem;
+/*Appointment*/
+
+#appointment {
+    padding: 2rem 1rem;
     background-color: rgb(14,115,96);
 }
 
-
-#appointment h2{
-    
+#appointment h2 {
     font-weight: bold;
     font-size: 26px;
-    justify-self: center;
     text-align: center;
     color: #ffffff;
+    margin-bottom: 0.5rem;
 }
 
-
-#appointment p{
-    font-weight:300;
-    font-size: 12px;
-    justify-self: center;
+#appointment p {
+    font-weight: 300;
+    font-size: 14px;
     text-align: center;
     color: #ffffff;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
-
-#appointment form{
+#appointment form {
     background-color: #ffffff;
     border-radius: 10px;
     padding: 2rem;
     width: 100%;
+    max-width: 700px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
-#appointment input{
+#appointment label {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 0.4rem;
+    color: #333;
+    display: block;
+}
+
+#appointment input[type="text"],
+#appointment input[type="email"],
+#appointment input[type="number"],
+#appointment select,
+textarea {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     border: 1px solid #151515;
-    padding: 0.6rem;
+    padding: 0.8rem;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #fff;
 }
 
-textarea{
-    width: 100%;
-    margin-bottom: 1rem;
-    border: 1px solid #151515;
-    padding: 1rem;
+textarea {
+    resize: vertical;
+    height: 120px;
 }
 
-#appointment button{
-    background-color: rgb(14,115,96);
-    color: #ffffff;
-    border-radius: 10px;
-    padding: 0.5rem;
-    border: none;
-    width: 100%;
-}
-
-#gender{
+.male {
     display: flex;
     gap: 20px;
-    margin-bottom: 1rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
 }
 
-.male{
-   display: block;
-   gap: 12px;
+ .age-group {
+    flex: 1;
 }
 
-
-
-.age{
-    width: 10%;
+.age {
+    width: 100% 
+}
+.age-group input {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #151515;
+    border-radius: 4px;
 }
 
+#appointment button {
+    background-color: rgb(14,115,96);
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 0.9rem;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+}
 
+#appointment button:hover {
+    opacity: 0.9;
+}
 /*footer*/
 footer{
     background-color: #151515;
